@@ -4,6 +4,7 @@ public class VendaPeca {
     private String nomePeca;
     private double valor;
     private int quantidade;
+    private int id;
 
     public VendaPeca(String nomePeca, double valor, int quantidade) {
         this.nomePeca = nomePeca;
@@ -34,4 +35,12 @@ public class VendaPeca {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getId() {
+		return id;
+	}
 }

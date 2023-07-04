@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VendaDAOMySQL implements VendaDAO {
-    private static final String URL = "jdbc:mysql://localhost:3306/tb_trabalho";
+    private static final String URL = "jdbc:mysql://localhost:3306/trabalholucasfinal";
     private static final String USUARIO = "root";
     private static final String SENHA = "";
 
@@ -46,7 +46,7 @@ public class VendaDAOMySQL implements VendaDAO {
             statement.setInt(1, vendaId);
             statement.executeUpdate();
             statement.close();
-            System.out.println("Venda exclui­da com sucesso.");
+            System.out.println("Venda excluiï¿½da com sucesso.");
         } catch (SQLException e) {
             System.out.println("Erro ao excluir venda: " + e.getMessage());
         }
